@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+
+  apache:
+    build: .
+    container_name: desafio-seat
+    ports:
+      - 80:80
+    volumes:
+     - "/home/paulo/workspace/desafio-seat/:/var/www/html"
